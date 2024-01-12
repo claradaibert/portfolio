@@ -1,10 +1,11 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-    width: 100vw;
+    width: 100%;
     display: flex;
     padding: 55px;
     gap: 50px;
+    position: sticky;
 
     button {
         width: fit-content;
