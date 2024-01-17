@@ -15,7 +15,6 @@ const CurriculumButton: React.FC = () => {
       <a
         href={currentLanguageIsPT ? ClaraCV : ClaraCVPT}
         download="claraDaibert_CV"
-        target="_blank"
       >
         {t('@curriculumButton/Download')}
       </a>
