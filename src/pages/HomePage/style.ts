@@ -9,7 +9,7 @@ export const Container = styled.div`
   flex-direction: column;
 
   .pageBody {
-    padding: 55px;
+    padding: 200px 55px 85px;
     white-space: pre-line;
 
     .header {

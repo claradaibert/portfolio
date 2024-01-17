@@ -5,7 +5,8 @@ export const Container = styled.div`
     display: flex;
     padding: 55px;
     gap: 50px;
-    position: sticky;
+    position: fixed;
+    background-color: ${({theme}) => theme.background_primary};
 
     button {
         width: fit-content;
