@@ -11,6 +11,11 @@ export const Container = styled.div`
     top: 10px;
     left: 10px;
     border-radius: 5%;
+
+    @media screen and (max-width: 500px) {
+      height: 250px;
+      width: 250px;
+    }
   }
 
   img {
@@ -18,5 +23,9 @@ export const Container = styled.div`
     z-index: 3;
     border-radius: 5%;
     position: absolute;
+
+    @media screen and (max-width: 500px) {
+      height: 250px;
+    }
   }
 `;
