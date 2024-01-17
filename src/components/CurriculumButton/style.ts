@@ -1,11 +1,11 @@
 import styled from "styled-components";
 
-const Container = styled.div`
+export const Container = styled.div`
     width: 80%;
     height: fit-content;
     padding: 0.5rem 0;
     border: none;
-    border-radius: 15px;
+    border-radius: 20px;
     background-color: ${({theme}) => theme.background_secondary};
     display: flex;
     justify-content: center;

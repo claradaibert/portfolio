@@ -1,11 +1,26 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 
-import * as Style from './style';
+import ClaraCV from "../../assets/ClaraDaibert_CV.pdf";
+import ClaraCVPT from "../../assets/ClaraDaibert_Curriculo.pdf";
+
+import * as Style from "./style";
 
 const CurriculumButton: React.FC = () => {
-    return (
-        <></>
-    )
-}
+  const { i18n, t } = useTranslation();
+  const currentLanguageIsPT = i18n?.language === "en";
 
-export {CurriculumButton};
+  return (
+    <Style.Container>
+      <a
+        href={currentLanguageIsPT ? ClaraCV : ClaraCVPT}
+        download="claraDaibert_CV"
+        target="_blank"
+      >
+        {t('@curriculumButton/Download')}
+      </a>
+    </Style.Container>
+  );
+};
+
+export { CurriculumButton };
