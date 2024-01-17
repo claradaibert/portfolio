@@ -1,19 +1,29 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-    width: 100%;
+    width: 90%;
+    align-self: center;
     height: fit-content;
-    padding: 4rem 0;
+    padding: 0 100px 0 55px;
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 4rem;
 
-    .textBody{
-        font-family:  'Montserrat', sans-serif;
-        color: ${({theme}) => theme.font_primary};
-        font-size: 1rem;
-        width: 60%;
-        text-align: center;
-        line-height: 3.5;
+    .bodyArea {
+        display: flex;
+        flex-direction: column;
+        height: 350px;
+        justify-content: space-between;
+        align-items: flex-end;
+
+        .textBody{
+            font-family:  'Montserrat', sans-serif;
+            color: ${({theme}) => theme.font_primary};
+            font-size: 1rem;
+            width: 100%;
+            text-align: right;
+            line-height: 3.5;
+        }
     }
 `
